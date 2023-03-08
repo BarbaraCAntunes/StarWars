@@ -1,0 +1,43 @@
+<section class="personagens-card">
+  <div *ngFor="let personagem of personagens">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="card card_red text-center" style="width: 18rem">
+              <div class="title">
+                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                <img
+                  src="{{ personagem.avatar }}"
+                  class="card-img-top"
+                  alt="..."
+                  width="200px"
+                />
+              </div>
+              <div class="price">
+                <h4>{{ personagem.nome }}</h4>
+              </div>
+              <div class="option">
+                <ul>
+                  <li>
+                    <strong>Habilidade: </strong>{{ personagem.habilidade }}
+                  </li>
+                  <li><strong>Planeta: </strong>{{ personagem.planeta }}</li>
+                  <li><strong>Armas: </strong>{{ personagem.armas }}</li>
+                </ul>
+              </div>
+              <a href="#">Saiba Mais</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="actions">
+    <!-- <button class="buttons-actions" (click)="obterTodosPersonagens()">Obter Todos</button> -->
+    <!-- <button class="buttons-actions" (click)="obterSomenteUm()">Obter Somente 1</button>
+      <button class="buttons-actions" (click)="adicionarpersonagem()">Adicionar</button>
+      <button class="buttons-actions" (click)="atualizar()">Atualizar</button>
+      <button class="buttons-actions" (click)="remover()">Remover</button> -->
+  </div>
+</section>
